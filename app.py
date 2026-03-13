@@ -3,7 +3,7 @@ from huggingface_hub import InferenceClient
 from PIL import Image
 import os
 
-client=InferenceClient(token="os.getenv("HF_TOKEN"))
+client=InferenceClient(token=os.getenv("HF_TOKEN"))
 Model="stabilityai/stable-diffusion-xl-base-1.0"
 
 st.title("AI Image Generator")
