@@ -1,8 +1,9 @@
 import streamlit as st
 from huggingface_hub import InferenceClient
 from PIL import Image
+import os
 
-client=InferenceClient(token="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")
+client=InferenceClient(token="os.getenv("HF_TOKEN"))
 Model="stabilityai/stable-diffusion-xl-base-1.0"
 
 st.title("AI Image Generator")
@@ -22,4 +23,5 @@ if st.button("generate") and prompt:
     with st.spinner("AI is generating your image..."):
        image=client.text_to_image(prompt,model=Model)
        st.image(image)
+
 
