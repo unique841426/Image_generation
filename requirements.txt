@@ -1,4 +1,3 @@
-hugging_hub face
-streamlit for deployment
-pilllow
-
+streamlit
+transformers
+pillow
