@@ -1,0 +1,4 @@
+hugging_hub face
+streamlit for deployment
+pilllow
+
