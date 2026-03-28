@@ -25,7 +25,7 @@ style_map = {
     "Cartoon": "cartoon style, 2D illustration"
 }
 
-if st.button("generate") and prompt:
+if st.button("Generate") and prompt:
     with st.spinner("AI is generating your image..."):
 
         # ✅ style apply
